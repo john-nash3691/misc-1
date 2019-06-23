@@ -82,7 +82,7 @@ namespace Cleaner
             // Get the subdirectories for the specified directory.
             DirectoryInfo dir = new DirectoryInfo(sourceDirName);
 
-            if (dir.Name == ".vs" || dir.Name == ".git" || dir.Name == "bin" || dir.Name == "obj")
+            if (dir.Name == ".vs" || dir.Name == ".git" || dir.Name == "bin" || dir.Name == "obj" || dir.Name == "packages")
                 return;
 
             if (!dir.Exists)
